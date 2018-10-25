@@ -1,3 +1,4 @@
+#William Cass
 import sys #sys allows for the use of STDIN and STDOUT
 import ast #ast allows for easy parsing of input string into list
 
@@ -6,8 +7,8 @@ b,d = a[:],[]
 
 def sorter():
     for i in range (0,len(b)):
-        n = b[0]
-        m = 0
+        n = b[0]    
+        m = 0                           #m holds the position of n
         for j in range (0,len(b)):
             if n >= b[j]:
                 n = b[j]
@@ -18,5 +19,5 @@ def sorter():
         d.append(m+1)
 
 sorter()
-out = str(d)
+out = str(d)                            #output must be string
 sys.stdout.write(out)
